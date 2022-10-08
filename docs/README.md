@@ -16,14 +16,14 @@ A simple library that transforms JavaScript into a better platform.
 ## Start coding
 - To initialise in JavaScript, copy and paste this code into your script file:
 ```js
-
 nd = new Node(); //initialise the NodeCDN minimal js script
 nd.Client('key'); //initialise the client
 
 Init();
 ```
+
 - To initalise in Python, copy and paste this code into your script files:
-```python
+```py
 # This is the file where your Flask server will be
 
 from flask import Flask
