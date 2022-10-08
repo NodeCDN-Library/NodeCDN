@@ -1,1 +1,2 @@
-## Add python s***
+## About NodeCDN
+A simple library that transforms JavaScript into a better platform.
