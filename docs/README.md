@@ -41,7 +41,7 @@ app.run()
 ```
 ```html
 <!--Put before closing body tag -->
-<script src="{{ url_for('nodecdndistro') }}"></script>
+<script src="nodecdn/dist"></script>
 <script>
 
 </script>
