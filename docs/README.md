@@ -73,3 +73,26 @@ func = node.makeFunction(function() {
 }, {})
 func()()
 ```
+
+### node.safeExec(func) / node.safeExecute(func)
+Used to execute a function made by NodeCDN.
+`node.safeExec(func) && node.safeExecute(func)`
+
+### node.request(method="GET", url, callback, headers={}, body="") (asynchronous)
+Used to send a request to the backend or an api call of your choice.
+
+```js 
+function func(resp) {
+    alert(`response is ${resp}`)
+}
+
+node.request(
+    "POST", 
+    "https://emmalovescooking.com/recipes/api", 
+    func, 
+    {"token": "authToken"}, 
+    "Meat pie and roasted beans"
+)
+```
+
+
