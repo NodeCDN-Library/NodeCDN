@@ -16,6 +16,7 @@ A simple library that transforms JavaScript into a better platform.
 ## Start coding
 - To initialise in JavaScript, copy and paste this code into your script file:
 ```js
+
 nd = new Node(); //initialise the NodeCDN minimal js script
 nd.Client('key'); //initialise the client
 
