@@ -48,3 +48,28 @@ app.run()
 </script>
 ```
 
+### node.Client(key)
+Used to specify the client of the browser.
+`node.Client('yourKeyHere')`
+
+### node.PingServer(times)
+Used to ping the server as many times as you like.
+`node.PingServer(1)`
+
+### node.makeFunction(code, executorOptions={})
+Used to make a function easily!
+
+```js
+node.makeFunction(function() {
+    alert("Hello there!")
+}, {exec:true})
+```
+
+You can also execute it using this method:
+
+```js
+func = node.makeFunction(function() {
+    alert("Hello there!")
+}, {})
+func()()
+```
