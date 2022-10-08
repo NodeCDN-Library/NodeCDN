@@ -2,7 +2,7 @@
 A simple library that transforms JavaScript into a better platform.
 
 ## Installation
-- For client sides: `<script class="nodecdn-init" src="https://hostereric.herokuapp.com/NodeCDN/index.min.js"></script>`
+- For client sides: `<script class="nodecdn-init" src="https://hostereric.herokuapp.com/NodeCDN/index.min.js">config = {"method": "web"}</script>`
 - For backend: Go down to the [backend](#initialising-on-the-backend) section.
 
 ## Initialising on the backend
@@ -11,7 +11,7 @@ A simple library that transforms JavaScript into a better platform.
 ## For standalone installs:
 1. Download the latest ZIP file from [Releases](https://github.com/WWEMGamer2/NodeCDN/releases/tag/StandaloneInstalls)
 2. UnZIP, then move to your website's asset directory
-3. Initialise it like in this example here (change the src to your corresponding path): `<script class="nodecdn-init standalone" src="assets/NodeCDN/init/index.min.js"></script>`
+3. Initialise it like in this example here (change the src to your corresponding path): `<script class="nodecdn-init standalone" src="assets/NodeCDN/init/index.min.js">config = {"method": "standalone"}</script>`
 
 ## Start coding
 - To initialise in JavaScript, copy and paste this code into your script file:
@@ -41,9 +41,10 @@ app.run()
 ```
 ```html
 <!--Put before closing body tag -->
-<script src="nodecdn/dist"></script>
-<script>
-
+<script src="nodecdn/dist">
+    config = {
+        "method": "standalone"
+    }
 </script>
 ```
 
