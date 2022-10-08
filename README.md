@@ -48,3 +48,5 @@ app.run()
 ```
 
 After you have done this, you can read our docs here: https://nodecdndocs.readthedocs.io
+
+theme: minima
