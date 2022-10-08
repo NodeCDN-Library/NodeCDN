@@ -65,7 +65,7 @@ node.makeFunction(function() {
 }, {exec:true})
 ```
 
-You can also execute it using this method:
+You can also execute it using this method: (still in development)
 
 ```js
 func = node.makeFunction(function() {
