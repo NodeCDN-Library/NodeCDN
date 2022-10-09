@@ -232,4 +232,22 @@ node.isMobile()
 ```
 
 ### node.createHTML(tag)
-Used to create a HTML element which you can append by putting it in our [appendChildToParent()]()
+Used to create a HTML element which you can append by putting it in our [appendChildToParent()](#nodeappendchildtoparentparent-child) function provided by NodeCDN.
+
+```js
+element = node.createHTML('a')
+element.innerHTML = "a link"
+element.href = "#"
+node.appendChildToParent(node.doc().body, element)
+```
+
+### node.editStyle(element, styles="")
+Used to set an element's styling and CSS properties.
+
+```js
+element = node.createHTML('a')
+element.innerHTML = "a link"
+element.href = "#"
+node.editStyle(element, "text-decoration: none;")
+node.appendChildToParent(node.doc().body, element)
+```
