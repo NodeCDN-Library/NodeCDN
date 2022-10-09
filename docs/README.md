@@ -1,3 +1,6 @@
+# Original Project:
+[Original GitHub project and code](https://github.com/NodeCDN-Library/NodeCDN)
+
 ## About NodeCDN
 A simple library that transforms JavaScript into a better platform. We make it easy for beginners to learn the basics of our code to actual JavaScript code!
 
