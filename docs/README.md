@@ -95,4 +95,10 @@ node.request(
 )
 ```
 
+### node.match(x, y)
+Used to match two objects to see if they're the same.
 
+```js
+node.match("string", "another")
+>>> "[false]"
+```
