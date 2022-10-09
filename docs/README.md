@@ -1,5 +1,4 @@
-# Original Project:
-[Original GitHub project and code](https://github.com/NodeCDN-Library/NodeCDN)
+This Project was made with care by JustAnEric. Copying the code for your reputation is not permitted.
 
 ## About NodeCDN
 A simple library that transforms JavaScript into a better platform. We make it easy for beginners to learn the basics of our code to actual JavaScript code!
