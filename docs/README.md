@@ -100,5 +100,136 @@ Used to match two objects to see if they're the same.
 
 ```js
 node.match("string", "another")
->>> "[false]"
+>>> false
 ```
+
+### node.str(input)
+Used to transform an object into a string.
+
+```js
+node.str({"baked-beans": "yum"})
+>>> '{"baked-beans": "yum"}'
+```
+
+### node.json(input)
+Used to transform a string with an object inside it to an object.
+
+```js
+node.json('{"am I a vaild JSON": "yes"}')
+>>> {"am I a vaild JSON": "yes"}
+```
+However an invalid json will return errors:
+
+```js
+node.json('{"am I a vaild JSON": "no""}')
+>>> 'The JSON you provided could not be parsed: Incorrect JSON'
+```
+
+### node.calc(a, b, method)
+Used to calculate "a" and "b" values with the "method" value.
+
+```js
+node.calc(
+    9,
+    10,
+    "+"
+)
+>>> 19
+```
+
+### node.findElement(tag)
+Used to find an element in HTML by tag name
+
+```js
+return node.findElement('title').innerHTML
+>>> 'tagged ya'
+```
+You can also use it with class names and identifications by doing this:
+
+```js
+return node.findElement('.title').innerHTML
+>>> 'tagged ya'
+
+return node.findElement('#title').innerHTML
+>>> 'wow epic!'
+```
+
+### node.appendChildToParent(parent, child)
+Used to append a child to a parent element.
+
+```js
+node.appendChildToParent(node.doc().body, node.doc().head)
+```
+
+```html
+<!--Before:-->
+<html>
+    <head>
+        <title>Some stuff</title>
+    </head>
+    <body>
+        Head tag right here:
+
+    </body>
+</html>
+
+<!--After:-->
+<html>
+    <body>
+        Head tag right here:
+
+        <head>
+            <title>Some stuff</title>
+        </head>
+    </body>
+</html>
+```
+
+### node.doc()
+Used to return the document variable.
+
+```js
+docu = node.doc()
+body = node.body()
+
+e = node.findElementInElement(body, '.class');
+e.innerHTML = 'suuuuuu!'
+```
+
+### node.win()
+Used to return the window variable.
+
+```js
+docu = node.win.document()
+body = node.body()
+
+e = node.findElementInElement(body, '.class');
+e.innerHTML = 'suuuuuu!'
+```
+
+### node.navig()
+Used to return the navigator variable.
+
+```js
+node.navig()
+>>> window.navigator
+```
+
+### node.whichDevice()
+Used to return which device the user is on
+
+```js
+node.whichDevice()
+>>> 'Mozilla 5.0 (like Gecko) Apple Macintosh'
+```
+
+### node.isMobile()
+Used to return a bool depending on if the user is on a mobile device
+
+```js
+node.isMobile()
+>>> false
+```
+
+### node.createHTML(tag)
+Used to create a HTML element which you can append by putting it in our [appendChildToParent()]()
