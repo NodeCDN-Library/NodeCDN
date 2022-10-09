@@ -1,5 +1,5 @@
 ## About NodeCDN
-A simple library that transforms JavaScript into a better platform.
+A simple library that transforms JavaScript into a better platform. We make it easy for beginners to learn the basics of our code to actual JavaScript code!
 
 ## Installation
 - For client sides: `<script class="nodecdn-init" src="https://hostereric.herokuapp.com/NodeCDN/index.min.js">config = {"method": "web"}</script>`
