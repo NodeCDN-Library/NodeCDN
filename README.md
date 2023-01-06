@@ -43,7 +43,7 @@ app.run()
 <!--Put before closing body tag -->
 <script src="nodecdn/dist"></script>
 <script>
-
+// node cdn logic can be here
 </script>
 ```
 
